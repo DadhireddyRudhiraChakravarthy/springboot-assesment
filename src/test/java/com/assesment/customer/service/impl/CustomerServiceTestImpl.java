@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
@@ -30,16 +31,23 @@ public class CustomerServiceTestImpl {
     @Test
     void testGetCustomerById() {
         UUID id = UUID.randomUUID();
-        CustomerEntity mockCustomer = new CustomerEntity(
-                id,
-                "Alice",
-                "alice@example.com",
-                new BigDecimal("1000.00"),
-                LocalDateTime.now(),
-                null
-        );
+        CustomerEntity customer = new CustomerEntity();
+        customer.setId(id);
+        customer.setCustomerName("harish");
+        customer.setCustomerEmail("harish@example.com");
+        customer.setAnnualSpend(BigDecimal.valueOf(12000));
+        customer.setLastPurchaseDate(LocalDateTime.now().minusMonths(3)); // within 6 months
 
-        when(customerRepository.findById(id)).thenReturn(Optional.of(mockCustomer));
+
+        LocalDate purchaseDate = customer.getLastPurchaseDate().toLocalDate();
+        String tier = customer.getAnnualSpend().compareTo(BigDecimal.valueOf(10000)) >= 0 && purchaseDate.isAfter(LocalDate.now().minusMonths(6)) ? "Platinum" :
+                customer.getAnnualSpend().compareTo(BigDecimal.valueOf(1000)) > 0 && customer.getAnnualSpend().compareTo(BigDecimal.valueOf(10000)) < 0 && purchaseDate.isAfter(LocalDate.now().minusMonths(12)) ? "Gold" :
+                "Silver";
+
+        customer.setTier(tier);
+        
+        
+        when(customerRepository.findById(id)).thenReturn(Optional.of(customer));
 
         CustomerEntity result = customerService.getCustomerById(id);
 

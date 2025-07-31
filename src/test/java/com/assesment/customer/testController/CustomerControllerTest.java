@@ -41,7 +41,7 @@ public class CustomerControllerTest {
     @BeforeEach
     void setup() {
         id = UUID.randomUUID();
-        customer = new CustomerEntity(id, "harish", "harish@example.com", new BigDecimal("1198.00"), LocalDateTime.now(), null);
+        customer = new CustomerEntity(id, "harish", "harish@example.com", new BigDecimal("999"), LocalDateTime.now().minusMonths(10), "Gold");
     }
 
     @Test
@@ -52,8 +52,9 @@ public class CustomerControllerTest {
                 .param("customerId", id.toString()))
         
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$.customerName").value("harish"))
-            .andExpect(jsonPath("$.customerEmail").value("harish@example.com"));
+            .andExpect(jsonPath("$.data.customerName").value("harish"))
+            .andExpect(jsonPath("$.data.customerEmail").value("harish@example.com"))
+        .andExpect(jsonPath("$.data.tier").value("Gold"));
     }
     
     @Test
@@ -63,8 +64,9 @@ public class CustomerControllerTest {
         mockMvc.perform(get("/assesment/customer/getCustomerByName")
                 .param("customerName", customer.getCustomerName()))
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$.customerName").value("harish"))
-            .andExpect(jsonPath("$.customerEmail").value("harish@example.com"));
+            .andExpect(jsonPath("$.data.customerName").value("harish"))
+            .andExpect(jsonPath("$.data.customerEmail").value("harish@example.com"))
+        .andExpect(jsonPath("$.data.tier").value("Gold"));
     }
     
     @Test
@@ -74,8 +76,9 @@ public class CustomerControllerTest {
         mockMvc.perform(get("/assesment/customer/getCustomerByEmail")
                 .param("customerEmail", customer.getCustomerEmail()))
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$.customerName").value("harish"))
-            .andExpect(jsonPath("$.customerEmail").value("harish@example.com"));
+            .andExpect(jsonPath("$.data.customerName").value("harish"))
+            .andExpect(jsonPath("$.data.customerEmail").value("harish@example.com"))
+        .andExpect(jsonPath("$.data.tier").value("Gold"));
     }
     
   
