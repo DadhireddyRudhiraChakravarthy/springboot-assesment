@@ -39,7 +39,8 @@ public class CustomerController {
 	public ResponseEntity<CustomerResponse<CustomerEntity>> saveCustomer(@RequestBody @Valid CustomerEntity customerEntity) {
 
 		  customerEntity= customerService.saveCustomerData(customerEntity);
-		  return  ResponseUtil.buildResponse(HttpStatus.OK,"Customer Created Successfully",customerEntity);
+		    return ResponseEntity.ok(new CustomerResponse<>(200, "OK", "Customer saved successfully", customerEntity));
+
 	}
 
 	@GetMapping("/getCustomerById")
