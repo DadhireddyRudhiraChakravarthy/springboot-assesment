@@ -23,7 +23,7 @@ import com.assesment.customer.util.ResponseUtil;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/assesment/customer")
+@RequestMapping("/customer")
 public class CustomerController {
 
 	@Autowired
