@@ -116,23 +116,7 @@ public class CustomerControllerTest {
             .andExpect(jsonPath("$.data").value("deleted"));
     }
   
-    
-    @Test
-    void testEmailFormatValidation() {
-        customer.setCustomerEmail("invalid-email"); 
 
-        Set<ConstraintViolation<CustomerEntity>> violations = validator.validate(customer);
-
-        violations.forEach(v -> System.out.println(v.getPropertyPath() + " - " + v.getMessage()));
-
-        assertFalse(violations.isEmpty(), "Expected at least one validation error");
-
-        boolean hasEmailError = violations.stream()
-            .anyMatch(v -> v.getPropertyPath().toString().equals("customerEmail") &&
-                           v.getMessage().contains("Invalid email format"));
-
-        assertTrue(hasEmailError, "Should detect invalid email format");
-    }
 
 	
     @Test

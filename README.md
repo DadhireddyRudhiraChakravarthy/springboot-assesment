@@ -94,6 +94,12 @@ Sample Response (POST)
 }
 
 
+##API Documentation (Swagger)
+
+This project uses **Swagger UI** for interactive REST API documentation.
+http://localhost:8082/assesment/swagger-ui/index.html
+
+
 Testing
 
 # Run tests
