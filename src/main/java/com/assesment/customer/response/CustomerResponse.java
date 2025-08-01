@@ -1,4 +1,4 @@
-package com.assesment.response;
+package com.assesment.customer.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

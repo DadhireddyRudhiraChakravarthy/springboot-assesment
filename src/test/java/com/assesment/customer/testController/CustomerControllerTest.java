@@ -29,13 +29,15 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.assesment.customer.controller.CustomerController;
 import com.assesment.customer.entity.CustomerEntity;
 import com.assesment.customer.service.CustomerService;
-import com.assesment.response.CustomerResponse;
+import com.assesment.customer.response.CustomerResponse;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @WebMvcTest(CustomerController.class)
 public class CustomerControllerTest {
 

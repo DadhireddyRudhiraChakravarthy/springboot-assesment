@@ -3,7 +3,7 @@ package com.assesment.customer.util;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.assesment.response.CustomerResponse;
+import com.assesment.customer.response.CustomerResponse;
 
 public class ResponseUtil {
 

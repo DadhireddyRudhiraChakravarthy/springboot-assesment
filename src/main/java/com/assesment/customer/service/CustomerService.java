@@ -5,7 +5,7 @@ import java.util.UUID;
 import org.springframework.http.ResponseEntity;
 
 import com.assesment.customer.entity.CustomerEntity;
-import com.assesment.response.CustomerResponse;
+import com.assesment.customer.response.CustomerResponse;
 
 import jakarta.validation.Valid;
 

@@ -1,0 +1,87 @@
+2025-08-01T12:31:00.946+05:30  INFO 23452 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Starting SpringbootAssesmentApplication using Java 17.0.7 with PID 23452 (C:\Springboot_Assesment\Springboot_Assesment\target\classes started by LENOVO in C:\Springboot_Assesment\Springboot_Assesment)
+2025-08-01T12:31:00.956+05:30 DEBUG 23452 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-01T12:31:00.962+05:30  INFO 23452 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T12:31:03.112+05:30  INFO 23452 --- [Springboot_Assesment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T12:31:03.267+05:30  INFO 23452 --- [Springboot_Assesment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interface.
+2025-08-01T12:31:04.755+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-08-01T12:31:04.838+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T12:31:04.838+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-01T12:31:05.041+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T12:31:05.046+05:30  INFO 23452 --- [Springboot_Assesment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3930 ms
+2025-08-01T12:31:05.111+05:30  INFO 23452 --- [Springboot_Assesment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T12:31:05.593+05:30  INFO 23452 --- [Springboot_Assesment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:customer_db user=SA
+2025-08-01T12:31:05.600+05:30  INFO 23452 --- [Springboot_Assesment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T12:31:05.635+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer_db'
+2025-08-01T12:31:06.258+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T12:31:06.412+05:30  INFO 23452 --- [Springboot_Assesment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-01T12:31:06.497+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T12:31:07.130+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T12:31:07.298+05:30  WARN 23452 --- [Springboot_Assesment] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T12:31:09.633+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T12:31:09.793+05:30  INFO 23452 --- [Springboot_Assesment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T12:31:10.689+05:30  WARN 23452 --- [Springboot_Assesment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T12:31:11.555+05:30  INFO 23452 --- [Springboot_Assesment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-08-01T12:31:11.579+05:30  INFO 23452 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Started SpringbootAssesmentApplication in 11.868 seconds (process running for 13.143)
+2025-08-01T12:32:27.687+05:30  INFO 23452 --- [Springboot_Assesment] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T12:32:27.688+05:30  INFO 23452 --- [Springboot_Assesment] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T12:32:27.690+05:30  INFO 23452 --- [Springboot_Assesment] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-01T13:13:33.503+05:30  INFO 21988 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Starting SpringbootAssesmentApplication using Java 17.0.7 with PID 21988 (C:\Springboot_Assesment\Springboot_Assesment\target\classes started by LENOVO in C:\Springboot_Assesment\Springboot_Assesment)
+2025-08-01T13:13:33.519+05:30 DEBUG 21988 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-01T13:13:33.532+05:30  INFO 21988 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T13:13:36.283+05:30  INFO 21988 --- [Springboot_Assesment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T13:13:36.494+05:30  INFO 21988 --- [Springboot_Assesment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 1 JPA repository interface.
+2025-08-01T13:13:38.203+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-08-01T13:13:38.248+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T13:13:38.249+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-01T13:13:38.491+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T13:13:38.492+05:30  INFO 21988 --- [Springboot_Assesment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4597 ms
+2025-08-01T13:13:38.592+05:30  INFO 21988 --- [Springboot_Assesment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T13:13:39.476+05:30  INFO 21988 --- [Springboot_Assesment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:customer_db user=SA
+2025-08-01T13:13:39.483+05:30  INFO 21988 --- [Springboot_Assesment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T13:13:39.526+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer_db'
+2025-08-01T13:13:39.852+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T13:13:39.997+05:30  INFO 21988 --- [Springboot_Assesment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-01T13:13:40.099+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T13:13:40.791+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T13:13:40.991+05:30  WARN 21988 --- [Springboot_Assesment] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T13:13:44.422+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T13:13:44.640+05:30  INFO 21988 --- [Springboot_Assesment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T13:13:46.259+05:30  WARN 21988 --- [Springboot_Assesment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T13:13:47.636+05:30  INFO 21988 --- [Springboot_Assesment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-08-01T13:13:47.658+05:30  INFO 21988 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Started SpringbootAssesmentApplication in 15.872 seconds (process running for 17.646)
+2025-08-01T13:40:21.580+05:30  INFO 21240 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Starting SpringbootAssesmentApplication using Java 17.0.7 with PID 21240 (C:\Springboot_Assesment\Springboot_Assesment\target\classes started by LENOVO in C:\Springboot_Assesment\Springboot_Assesment)
+2025-08-01T13:40:21.591+05:30 DEBUG 21240 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-01T13:40:21.596+05:30  INFO 21240 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T13:40:23.780+05:30  INFO 21240 --- [Springboot_Assesment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T13:40:23.916+05:30  INFO 21240 --- [Springboot_Assesment] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
+2025-08-01T13:40:25.904+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-08-01T13:40:25.940+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T13:40:25.943+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-01T13:40:26.163+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T13:40:26.165+05:30  INFO 21240 --- [Springboot_Assesment] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4420 ms
+2025-08-01T13:40:26.253+05:30  INFO 21240 --- [Springboot_Assesment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T13:40:27.089+05:30  INFO 21240 --- [Springboot_Assesment] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:customer_db user=SA
+2025-08-01T13:40:27.094+05:30  INFO 21240 --- [Springboot_Assesment] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T13:40:27.162+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer_db'
+2025-08-01T13:40:27.646+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T13:40:28.101+05:30  INFO 21240 --- [Springboot_Assesment] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-01T13:40:28.248+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T13:40:28.885+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T13:40:29.014+05:30  WARN 21240 --- [Springboot_Assesment] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T13:40:30.938+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T13:40:31.063+05:30  INFO 21240 --- [Springboot_Assesment] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T13:40:31.938+05:30  WARN 21240 --- [Springboot_Assesment] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T13:40:32.897+05:30  INFO 21240 --- [Springboot_Assesment] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-08-01T13:40:32.919+05:30  INFO 21240 --- [Springboot_Assesment] [main] c.a.c.SpringbootAssesmentApplication     : Started SpringbootAssesmentApplication in 12.546 seconds (process running for 13.923)
+2025-08-01T13:40:53.982+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T13:40:53.982+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T13:40:53.988+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-01T13:40:54.416+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] c.a.c.controller.CustomerController      : POST /saveCustomer called with data: CustomerEntity(id=null, customerName=chakris, customerEmail=chakravarthy@gmail.com, annualSpend=1001.5, lastPurchaseDate=2025-07-31T12:47, tier=null)
+2025-08-01T13:40:54.419+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] c.a.c.service.impl.CustomerServiceImpl   : Saving customer: CustomerEntity(id=null, customerName=chakris, customerEmail=chakravarthy@gmail.com, annualSpend=1001.5, lastPurchaseDate=2025-07-31T12:47, tier=null)
+2025-08-01T13:40:54.645+05:30 DEBUG 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] c.a.c.service.impl.CustomerServiceImpl   : Customer saved with tier: Gold
+2025-08-01T13:40:54.646+05:30 DEBUG 21240 --- [Springboot_Assesment] [http-nio-8082-exec-3] c.a.c.controller.CustomerController      : Customer saved with ID:a5da46e0-7b6d-439a-a450-3181f6918b48
+2025-08-01T13:41:49.875+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-5] c.a.c.controller.CustomerController      : GET /getCustomerById called with customerId: a5da46e0-7b6d-439a-a450-3181f6918b48
+2025-08-01T13:41:49.876+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-5] c.a.c.service.impl.CustomerServiceImpl   : Fetching customer by ID: a5da46e0-7b6d-439a-a450-3181f6918b48
+2025-08-01T13:41:49.893+05:30 DEBUG 21240 --- [Springboot_Assesment] [http-nio-8082-exec-5] c.a.c.service.impl.CustomerServiceImpl   : Customer fetched: a5da46e0-7b6d-439a-a450-3181f6918b48
+2025-08-01T13:41:49.894+05:30 DEBUG 21240 --- [Springboot_Assesment] [http-nio-8082-exec-5] c.a.c.controller.CustomerController      : Customer fetched : ID =a5da46e0-7b6d-439a-a450-3181f6918b48
+2025-08-01T13:42:34.445+05:30  INFO 21240 --- [Springboot_Assesment] [http-nio-8082-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 530 ms

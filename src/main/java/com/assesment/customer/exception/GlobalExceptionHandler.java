@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import com.assesment.customer.entity.CustomerEntity;
-import com.assesment.response.CustomerResponse;
+import com.assesment.customer.response.CustomerResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.bind.MethodArgumentNotValidException;
